@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Calculator #0 - Snapshot 1`] = `ShallowWrapper {}`;
+exports[`Calculator - Mount #0. Snapshot 1`] = `ReactWrapper {}`;
+
+exports[`Calculator - Shallow #0. Snapshot 1`] = `ShallowWrapper {}`;

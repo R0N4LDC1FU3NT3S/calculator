@@ -1,5 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Keypad - Mount #0 - Snapshot 1`] = `ReactWrapper {}`;
+exports[`Keypad - Mount #0. Snapshot 1`] = `ReactWrapper {}`;
 
-exports[`Keypad - Shallow #0 - Snapshot 1`] = `ShallowWrapper {}`;
+exports[`Keypad - Shallow #0. Snapshot 1`] = `ShallowWrapper {}`;
