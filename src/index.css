@@ -19,8 +19,8 @@
 	--key-text-color: #d3d3d3;
 
 	/* font sizes */
-	--display-text-size: 4em;
-	--key-text-size: 3em;
+	--display-text-size: 6em;
+	--key-text-size: 5em;
 
 	/* font weights */
 	--display-text-weight: 400;
@@ -43,8 +43,8 @@
 @media screen and (max-width: 1024px) {
 	:root {
 		/* font sizes */
-		--display-text-size: 10em;
-		--key-text-size: 6em;
+		--display-text-size: 4em;
+		--key-text-size: 3em;
 
 		/* calculator dimensions */
 		--calculator-height: 100%;

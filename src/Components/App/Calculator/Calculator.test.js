@@ -223,4 +223,12 @@ describe("callOperator", () => {
 		wrapper.instance().callOperator()
 		expect(wrapper.state("displayValue")).toEqual("0")
 	})
+
+	it("#9. updates displayValue to Doubles Values", () => {
+		wrapper.setState({ storedValue: "1.5" })
+		wrapper.setState({ displayValue: "2.5" })
+		wrapper.setState({ selectedOperator: "x" })
+		wrapper.instance().callOperator()
+		expect(wrapper.state("displayValue")).toEqual("3.75")
+	})
 })
