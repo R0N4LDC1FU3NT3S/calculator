@@ -1,12 +1,12 @@
-import React from "react"
+import "jsdom-global/register"
 import { shallow, mount } from "enzyme"
 import Calculator from "./Calculator"
 import Display from "./Display/Display"
 import Keypad from "./Keypad/Keypad"
 
-//══════════════════//
+// ══════════════════//
 //		UI test		//
-//══════════════════//
+// ══════════════════//
 
 describe("Calculator - Shallow", () => {
 	let wrapper
@@ -24,17 +24,7 @@ describe("Calculator - Shallow", () => {
 	})
 
 	it("#3. Render Keypad", () => {
-		expect(
-			wrapper.containsMatchingElement(
-				<Keypad
-					callOperator={wrapper.instance().callOperator}
-					numbers={wrapper.instance().state.numbers}
-					operators={wrapper.instance().state.operators}
-					setOperator={wrapper.instance().setOperator}
-					updateDisplay={wrapper.instance().updateDisplay}
-				/>
-			)
-		).toEqual(true)
+		expect(wrapper.containsMatchingElement(<Keypad callOperator={wrapper.instance().callOperator} numbers={wrapper.instance().state.numbers} operators={wrapper.instance().state.operators} setOperator={wrapper.instance().setOperator} updateDisplay={wrapper.instance().updateDisplay} />)).toEqual(true)
 	})
 })
 
@@ -70,9 +60,9 @@ describe("Calculator - Mount", () => {
 	})
 })
 
-//══════════════════════════//
+// ══════════════════════════//
 //		Functional test		//
-//══════════════════════════//
+// ══════════════════════════//
 
 describe("updateDisplay", () => {
 	let wrapper

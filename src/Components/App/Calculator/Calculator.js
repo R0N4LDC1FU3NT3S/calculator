@@ -97,13 +97,7 @@ class Calculator extends Component {
 		return (
 			<div className="calculator-container">
 				<Display displayValue={displayValue} />
-				<Keypad
-					callOperator={this.callOperator}
-					numbers={numbers}
-					operators={operators}
-					setOperator={this.setOperator}
-					updateDisplay={this.updateDisplay}
-				/>
+				<Keypad callOperator={this.callOperator} numbers={numbers} operators={operators} setOperator={this.setOperator} updateDisplay={this.updateDisplay} />
 			</div>
 		)
 	}

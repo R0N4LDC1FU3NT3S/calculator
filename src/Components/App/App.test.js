@@ -2,9 +2,9 @@ import { shallow } from "enzyme"
 import App from "./App"
 import Calculator from "./Calculator/Calculator"
 
-//══════════════════//
+// ══════════════════//
 //		UI test		//
-//══════════════════//
+// ══════════════════//
 
 describe("App", () => {
 	let wrapper

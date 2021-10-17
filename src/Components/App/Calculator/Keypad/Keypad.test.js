@@ -1,10 +1,10 @@
-import React from "react"
+import "jsdom-global/register"
 import { shallow, mount } from "enzyme"
 import Keypad from "./Keypad"
 
-//══════════════════//
+// ══════════════════//
 //		UI test		//
-//══════════════════//
+// ══════════════════//
 
 describe("Keypad - Shallow", () => {
 	let wrapper

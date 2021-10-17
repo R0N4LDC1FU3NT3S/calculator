@@ -1,10 +1,9 @@
-import React from "react"
 import { shallow } from "enzyme"
 import Key from "./Key.js"
 
-//══════════════════//
+// ══════════════════//
 //		UI test		//
-//══════════════════//
+// ══════════════════//
 
 describe("Key", () => {
 	let wrapper

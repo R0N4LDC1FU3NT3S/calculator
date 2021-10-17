@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# Get Started 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+   ____      _            _       _
+  / ___|__ _| | ___ _   _| | __ _| |_ ___  _ __
+ | |   / _` | |/ __| | | | |/ _` | __/ _ \| '__|
+ | |__| (_| | | (__| |_| | | (_| | || (_) | |
+  \____\__,_|_|\___|\__,_|_|\__,_|\__\___/|_|
 
-## Available Scripts
+```
 
-In the project directory, you can run:
+## Deploy In:
 
-### `yarn start`
+https://calculator-seven-puce.vercel.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Download the project with
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `git clone https://github.com/R0N4LDC1FU3NT3S/calculator.git`
 
-### `yarn test`
+run the following command to launch locally in development mode
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npm Install`
 
-### `yarn build`
+and
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `npm start`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Open the browser and put the following url [http://localhost:3000](http://localhost:3000)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Run Docker 🐳
 
-### `yarn eject`
+If you have compatibility problems or the application does not run and you have docker installed, you can run the build.sh file with the following command
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `sh build.sh`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ó
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `./build.sh`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+this file will be in charge of creating the image and mounting it for you
 
-## Learn More
+## Tecnologies 💻
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-   React
+-   Webpack
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Best practices 🤖
 
-### Code Splitting
+-   Jest
+-   Eslint
+-   Prettier
+-   Husky
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Views Web
 
-### Analyzing the Bundle Size
+![image](https://user-images.githubusercontent.com/59535805/138643143-c83cb5ed-41fc-4a85-97a4-b85c2e400ac0.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project Structure
 
-### Making a Progressive Web App
+```
+├── build.sh
+├── Dockerfile
+├── jest.config.js
+├── LICENSE
+├── nginx
+|  └── nginx.conf
+├── package-lock.json
+├── package.json
+├── public
+|  ├── capture1.png
+|  ├── capture2.png
+|  ├── capture3.png
+|  ├── capture4.png
+|  ├── capture5.png
+|  └── index.html
+├── README.md
+├── src
+|  ├── Components
+|  |  └── App
+|  |     ├── App.css
+|  |     ├── App.js
+|  |     ├── App.test.js
+|  |     ├── Calculator
+|  |     |  ├── Calculator.css
+|  |     |  ├── Calculator.js
+|  |     |  ├── Calculator.test.js
+|  |     |  ├── Display
+|  |     |  |  ├── Display.css
+|  |     |  |  ├── Display.js
+|  |     |  |  ├── Display.test.js
+|  |     |  |  └── __snapshots__
+|  |     |  |     └── Display.test.js.snap
+|  |     |  ├── Keypad
+|  |     |  |  ├── Key
+|  |     |  |  |  ├── Key.css
+|  |     |  |  |  ├── Key.js
+|  |     |  |  |  ├── Key.test.js
+|  |     |  |  |  └── __snapshots__
+|  |     |  |  |     └── Key.test.js.snap
+|  |     |  |  ├── Keypad.css
+|  |     |  |  ├── Keypad.js
+|  |     |  |  ├── Keypad.test.js
+|  |     |  |  └── __snapshots__
+|  |     |  |     └── Keypad.test.js.snap
+|  |     |  └── __snapshots__
+|  |     |     └── Calculator.test.js.snap
+|  |     └── __snapshots__
+|  |        └── App.test.js.snap
+|  ├── index.css
+|  ├── index.js
+|  └── setupTests.js
+└── webpack
+   ├── common.js
+   ├── dev.js
+   └── prod.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
